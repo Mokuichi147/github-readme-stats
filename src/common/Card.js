@@ -118,6 +118,7 @@ class Card {
         height="${this.height}"
         viewBox="0 0 ${this.width} ${this.height}"
         fill="none"
+        background-color="#00000000"
         xmlns="http://www.w3.org/2000/svg"
       >
         <style>
