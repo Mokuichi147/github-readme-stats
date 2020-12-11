@@ -121,16 +121,20 @@ class Card {
         xmlns="http://www.w3.org/2000/svg"
       >
         <style>
-          rect { fill: "E8E8E8"; }
-          @media (prefers-color-scheme: dark) {
-            rect { fill: "#1A1A1A"; }
-          }
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
             fill: ${this.colors.titleColor};
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
+
           ${this.css}
+
+          rect { fill: "E8E8E8"; }
+          @media (prefers-color-scheme: dark) {
+            rect { fill: "#1A1A1A"; }
+            .stat { fill: "#E8E8E8"; }
+            .rank-text { fill: "#E8E8E8"; }
+          }
 
           ${process.env.NODE_ENV === "test" ? "" : getAnimations()}
           ${
