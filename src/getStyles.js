@@ -88,6 +88,10 @@ const getStyles = ({
       animation: rankAnimation 1s forwards ease-in-out;
     }
     ${process.env.NODE_ENV === "test" ? "" : getProgressAnimation({ progress })}
+    @media (prefers-color-scheme: dark) {
+      .stat { fill: "#E8E8E8"; }
+      .rank-text { fill: "#E8E8E8"; }
+    }
   `;
 };
 
