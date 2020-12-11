@@ -121,6 +121,10 @@ class Card {
         xmlns="http://www.w3.org/2000/svg"
       >
         <style>
+          rect { fill: "E8E8E8"; }
+          @media (prefers-color-scheme: dark) {
+            rect { fill: "#1A1A1A"; }
+          }
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
             fill: ${this.colors.titleColor};
@@ -146,11 +150,6 @@ class Card {
           height="99%"
           stroke="#E4E2E2"
           width="${this.width - 1}"
-          fill="${
-            window.matchMedia('(prefers-color-scheme: dark)').matches
-              ? '#1A1A1A'
-              : '#E8E8E8'
-          }"
           stroke-opacity="${this.hideBorder ? 0 : 1}"
         />
 
