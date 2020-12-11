@@ -118,7 +118,6 @@ class Card {
         height="${this.height}"
         viewBox="0 0 ${this.width} ${this.height}"
         fill="none"
-        background-color="#00000000"
         xmlns="http://www.w3.org/2000/svg"
       >
         <style>
@@ -148,9 +147,9 @@ class Card {
           stroke="#E4E2E2"
           width="${this.width - 1}"
           fill="${
-            typeof this.colors.bgColor === "object"
-              ? "url(#gradient)"
-              : this.colors.bgColor
+            window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? '#1A1A1A'
+              : '#E8E8E8'
           }"
           stroke-opacity="${this.hideBorder ? 0 : 1}"
         />
