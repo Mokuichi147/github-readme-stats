@@ -53,14 +53,14 @@ const getStyles = ({
 }) => {
   return `
     .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: "#1A1A1A";
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: ${textColor};
     }
     .stagger {
       opacity: 0;
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: "#1A1A1A"; 
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor}; 
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     
@@ -88,10 +88,6 @@ const getStyles = ({
       animation: rankAnimation 1s forwards ease-in-out;
     }
     ${process.env.NODE_ENV === "test" ? "" : getProgressAnimation({ progress })}
-    @media (prefers-color-scheme: dark) {
-      .stat { fill: "#E8E8E8"; }
-      .rank-text { fill: "#E8E8E8"; }
-    }
   `;
 };
 
