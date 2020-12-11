@@ -180,8 +180,8 @@ describe("Test renderStatsCard", () => {
     const iconClassStyles = stylesObject[".icon"];
 
     expect(headerClassStyles.fill).toBe(`#${themes.default.title_color}`);
-    expect(statClassStyles.fill).toBe(`#${themes.default.text_color}`);
-    expect(iconClassStyles.fill).toBe(`#${themes.radical.icon_color}`);
+    expect(statClassStyles.fill).toBe("#777");
+    expect(iconClassStyles.fill).toBe("#777");
     expect(queryByTestId(document.body, "card-bg")).toHaveAttribute(
       "fill",
       `#${themes.radical.bg_color}`,
