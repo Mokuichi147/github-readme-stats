@@ -132,6 +132,8 @@ class Card {
           rect { fill: "E8E8E8"; }
           @media (prefers-color-scheme: dark) {
             rect { fill: "#1A1A1A"; }
+            .stat { fill: "#E8E8E8"; }
+            .rank-text { fill: "#E8E8E8"; }
           }
 
           ${process.env.NODE_ENV === "test" ? "" : getAnimations()}
