@@ -129,9 +129,9 @@ class Card {
 
           ${this.css}
 
-          rect { fill: "E8E8E8"; }
+          rect { fill: #E8E8E8; }
           @media (prefers-color-scheme: dark) {
-            rect { fill: "#1A1A1A"; }
+            rect { fill: #1A1A1A; }
           }
 
           ${process.env.NODE_ENV === "test" ? "" : getAnimations()}
