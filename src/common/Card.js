@@ -146,6 +146,7 @@ class Card {
           rx="4.5"
           height="99%"
           stroke="#E4E2E2"
+          fill-opacity="0"
           width="${this.width - 1}"
           stroke-opacity="${this.hideBorder ? 0 : 1}"
         />
