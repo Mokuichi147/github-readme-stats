@@ -294,6 +294,11 @@ const themes = {
     text_color: "FFFFFF",
     bg_color: "2C2F33",
   },
+  mokuichi147: {
+    title_color: "42F2D6",
+    icon_color: "682dfc",
+    text_color: "808080",
+  },
 };
 
 module.exports = themes;
