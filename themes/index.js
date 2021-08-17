@@ -298,6 +298,7 @@ const themes = {
     title_color: "42F2D6",
     icon_color: "682dfc",
     text_color: "808080",
+    bg_color: "0D1117",
   },
 };
 
