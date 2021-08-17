@@ -1,9 +1,9 @@
 const themes = {
   default: {
-    title_color: "2f80ed",
-    icon_color: "4c71f2",
-    text_color: "333",
-    bg_color: "fffefe",
+    title_color: "42F2D6",
+    icon_color: "682dfc",
+    text_color: "808080",
+    bg_color: "0D1117",
     border_color: "e4e2e2",
   },
   default_repocard: {
@@ -293,12 +293,6 @@ const themes = {
     icon_color: "7289DA",
     text_color: "FFFFFF",
     bg_color: "2C2F33",
-  },
-  mokuichi147: {
-    title_color: "42F2D6",
-    icon_color: "682dfc",
-    text_color: "808080",
-    bg_color: "0D1117",
   },
 };
 
