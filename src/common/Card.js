@@ -121,7 +121,6 @@ class Card {
         height="${this.height}"
         viewBox="0 0 ${this.width} ${this.height}"
         fill="none"
-        fill-opacity="0"
         xmlns="http://www.w3.org/2000/svg"
       >
         <style>
@@ -155,6 +154,7 @@ class Card {
               ? "url(#gradient)"
               : this.colors.bgColor
           }"
+          fill-opacity="0"
           stroke-opacity="${this.hideBorder ? 0 : 1}"
         />
 
