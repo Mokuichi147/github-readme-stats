@@ -121,6 +121,7 @@ class Card {
         height="${this.height}"
         viewBox="0 0 ${this.width} ${this.height}"
         fill="none"
+        fill-opacity="0"
         xmlns="http://www.w3.org/2000/svg"
       >
         <style>
